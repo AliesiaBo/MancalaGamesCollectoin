@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G72" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FamineRuleParameters" representedClassName="FamineRuleParameters" syncable="YES" codeGenerationType="class">
+        <attribute name="didCaptureAllowed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="didGameShouldEnds" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="didPlayerFamine" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="didPlayerWasFamine" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="gameNameParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameName" inverseName="famineRuleParameters" inverseEntity="GameName"/>
+    </entity>
+    <entity name="GameName" representedClassName="GameName" syncable="YES" codeGenerationType="class">
+        <attribute name="gameName" optional="YES" attributeType="String"/>
+        <relationship name="famineRuleParameters" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FamineRuleParameters" inverseName="gameNameParent" inverseEntity="FamineRuleParameters"/>
+        <relationship name="gameParameters" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameParameters" inverseName="gameNameParent" inverseEntity="GameParameters"/>
+        <relationship name="otherParameters" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OtherParameters" inverseName="gameNameParent" inverseEntity="OtherParameters"/>
+        <relationship name="playerParameters" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlayerParameters" inverseName="gameNameParent" inverseEntity="PlayerParameters"/>
+    </entity>
+    <entity name="GameParameters" representedClassName="GameParameters" syncable="YES" codeGenerationType="class">
+        <attribute name="attemps" optional="YES" attributeType="String"/>
+        <attribute name="gameKey" optional="YES" attributeType="String"/>
+        <relationship name="gameNameParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameName" inverseName="gameParameters" inverseEntity="GameName"/>
+    </entity>
+    <entity name="MenuNamesData" representedClassName="MenuNamesData" syncable="YES" codeGenerationType="class">
+        <attribute name="playerName1" optional="YES" attributeType="String"/>
+        <attribute name="playerName2" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="NewGameSettingsExtension" representedClassName="NewGameSettingsExtension" syncable="YES" codeGenerationType="class">
+        <attribute name="cakeMode" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="changingRotationForPlayer2" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="famineMode" optional="YES" attributeType="String"/>
+        <attribute name="numberOfAttempsForOneMove" optional="YES" attributeType="String"/>
+        <attribute name="scatterOfPebbles" optional="YES" attributeType="String"/>
+        <attribute name="travelDirection" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="OtherParameters" representedClassName="OtherParameters" syncable="YES" codeGenerationType="class">
+        <attribute name="didCakeRuleUsed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="didChangeRotationForSecondPlayer" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="didFamineModeUsed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="lastDataSaving" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="numOfAttemps" optional="YES" attributeType="String"/>
+        <attribute name="travelDirrection" optional="YES" attributeType="String"/>
+        <relationship name="gameNameParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameName" inverseName="otherParameters" inverseEntity="GameName"/>
+    </entity>
+    <entity name="PlayerParameters" representedClassName="PlayerParameters" syncable="YES" codeGenerationType="class">
+        <attribute name="isFPM" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isSPM" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="playerName1" optional="YES" attributeType="String"/>
+        <attribute name="playerName2" optional="YES" attributeType="String"/>
+        <relationship name="gameNameParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameName" inverseName="playerParameters" inverseEntity="GameName"/>
+    </entity>
+</model>

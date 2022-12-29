@@ -1,0 +1,27 @@
+
+It was recorded as being played in Barahona, Neiba, Villa Jaragua, Los Ríos, Postrer Río, La Descubierta and Port-au-Prince.
+
+It's a two players game.
+It is played on a board made by two rows of six holes (other sizes were recorded, but 2x6 seems the more common).
+At the beginning each hole has four pieces
+
+Each player controls the row closer to him.
+Players take turns to move.
+At her turn the player takes all the stones from a hole belonging to her side of the board, and sow them counterclockwise.
+If the last stone lands in an occupied hole all these stones (the one just landed plus the ones that were already there) are taken up and she keeps on sowing starting in the next hole, unless
+The last stone lands in an hole making a casa (four pieces). In this case, she captures the contents of this holes.
+Once a capture has been made, the player looks into the preceding hole, and if it also has four pieces, she captures them, and all the pieces from the unbroken sequence of preceding holes containing four pieces.
+If a player has made a capture, she plays again.
+If the last stone lands in an empty hole the turn ends.
+If in her turn a player can not play (has no stones on her side) her turn passes.
+The one who makes a capture that leaves only four stones on the board captures also these four stones and the game is over.
+The winner of the game is the one who has captured more pieces
+
+Match rules:
+
+Once a game is over a next one is started, but:
+Each player fills as many holes on her side as she can with four pieces into each. The empty ones are not used to play in this game. Nevertheless, they can be recovered on following games
+The winner of the preceding game starts.
+The winner of the match is the one who leaves the opponent with no pieces at all at the end of a game"
+
+The source is not known for its grammar but it is reliable.

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MancalaIconDark.png" translatesAutoresizingMaskIntoConstraints="NO" id="1E6-7C-MCe">
+                                <rect key="frame" x="0.0" y="260.33333333333337" width="390" height="323.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1E6-7C-MCe" secondAttribute="height" multiplier="358:297" id="ZkA-jP-iTg"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="19" scale="large"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MancalaFamilyTitle" translatesAutoresizingMaskIntoConstraints="NO" id="8Oy-WW-RIM">
+                                <rect key="frame" x="0.0" y="47.000000000000014" width="390" height="213.33333333333337"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="1E6-7C-MCe" firstAttribute="top" secondItem="8Oy-WW-RIM" secondAttribute="bottom" id="7R0-6l-XSy"/>
+                            <constraint firstItem="1E6-7C-MCe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kdk-4e-yK2"/>
+                            <constraint firstItem="1E6-7C-MCe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MmN-d5-9z3"/>
+                            <constraint firstItem="8Oy-WW-RIM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="O2u-Yz-q0u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Oy-WW-RIM" secondAttribute="trailing" id="Uj5-I9-39B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1E6-7C-MCe" secondAttribute="trailing" id="dfN-Gx-i8Q"/>
+                            <constraint firstItem="8Oy-WW-RIM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e8T-dT-5yJ"/>
+                            <constraint firstItem="1E6-7C-MCe" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fEY-PC-HeX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.307692307692307" y="374.64454976303318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MancalaFamilyTitle" width="2668" height="1500"/>
+        <image name="MancalaIconDark.png" width="1024" height="1024"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
