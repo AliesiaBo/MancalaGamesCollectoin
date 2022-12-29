@@ -360,6 +360,7 @@ extension BoardCupsAndGameLogicController {
             self.saveNewData(data: self.createData())
             print("Data saves correctly. Maybe")
             //_End savind data
+            //123
             
             self.dismiss(animated: true, completion: nil)
         } doAction2: { UIAlertAction in
