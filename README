@@ -1,0 +1,16 @@
+# MancalaGamesCollectoin
+
+MancalaFamily - collection of mancala games. Offline game.
+
+Already implemented:
+- Kalah
+- Oware
+- Congkak
+- Dakon
+
+Other settings to each of realised game:
+- travel dirrection (standart, cross, clockwise, anticlockwise)
+- scatter of pebbles (equable e.g. "4 4 4", random e.g. "3 2 7")
+- attemps (many, one)
+- cake mode (on, off)
+- rotation Board for second player (on, off)
